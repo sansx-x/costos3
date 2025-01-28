@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>decoracion</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de decorado</h1>
+        <form id="calculadora">
+            <div class="form-group">
+                <label for="precioHuevo">Precio por unidad de huevo (Bs):</label>
+                <input type="number" id="precioHuevo" required>
+                <label for="cantidadHuevo">Cantidad de huevos (unidades):</label>
+                <input type="number" id="cantidadHuevo" required>
+            </div>
+            <div class="form-group">
+                <label for="precioAzucar">Precio por kg de azúcar (Bs):</label>
+                <input type="number" id="precioAzucar" required>
+                <label for="cantidadAzucar">Cantidad de azúcar (g):</label>
+                <input type="number" id="cantidadAzucar" required>
+            </div>
+            <div class="form-group">
+                <label for="precioColorante">Precio por gramos de colorante (Bs):</label>
+                <input type="number" id="precioColorante" required>
+                <label for="cantidadColorante">Cantidad de colorante (mg):</label>
+                <input type="number" id="cantidadColorante" required>
+            </div>
+            <div class="form-group">
+                <label for="precioEsencia">Precio por litro de esencia (Bs):</label>
+                <input type="number" id="precioEsencia" required>
+                <label for="cantidadEsencia">Cantidad de esencia (ml):</label>
+                <input type="number" id="cantidadEsencia" required>
+            </div>
+            <div class="form-group">
+                <label for="precioVinagre">Precio por litro de vinagre (Bs):</label>
+                <input type="number" id="precioVinagre" required>
+                <label for="cantidadVinagre">Cantidad de vinagre (ml):</label>
+                <input type="number" id="cantidadVinagre" required>
+            </div>
+            <button type="button" onclick="calcularCosto()">Calcular Costo</button>
+        </form>
+        <h2 id="resultado">Costo Total: </h2>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
